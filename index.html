@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script/script.js" defer></script>
+    <title>NickSaint Restaurante</title>
+</head>
+<body>
+    <header>
+        <div class="nav-logo">
+            <a href="#home"><img src="images/Nav-logo.png" alt="logo" class="logo"></a>
+        </div>
+        <nav class="side-bar">
+            <img src="images/x-icon.svg" alt="" class="x-icon" onclick="hideSidebar()">
+                <a href="#cardapio"><li class="nav-item">
+                    <i class="fa-solid fa-utensils" id="bar-icon"></i>
+                Cardápio</li></a>
+                <a href="#pratos"><li class="nav-item">
+                    <i class="fa-solid fa-bowl-food" id="bar-icon"></i>
+                Pratos</li></a>
+                <a href="#promocoes"><li class="nav-item">
+                    <i class="fa-solid fa-tags" id="bar-icon"></i>
+                Ofertas</li></a>
+                <a href="#delivery"><li class="nav-item">
+                    <i class="fa-solid fa-motorcycle" id="bar-icon"></i>
+                Delivery</li></a>
+                <a href="#serviço"><li class="nav-item">
+                    <i class="fa fa-phone" id="bar-icon"></i>
+                Serviço</li></a>
+        </nav>
+        <nav class="nav-bar">
+            <a href="#cardapio"><li class="nav-item">Cardápio</li></a>
+            <a href="#pratos"><li class="nav-item">Pratos</li></a>
+            <a href="#promocoes"><li class="nav-item">Ofertas</li></a>
+            <a href="#delivery"><li class="nav-item">Delivery</li></a>
+            <a href="#serviço"><li class="nav-item">Serviço</li></a>
+        </nav>
+        <div class="nav-buttons">
+            <i class="fa-solid fa-basket-shopping" id="nav-icon"></i>
+            <a href="#reservas"><button class="reservas">Reservas</button></a>
+            <i class="fa-regular fa-chart-bar" id="nav-icon-2" onclick="showSidebar()"></i>
+        </div>
+    </header>
+    <div class="back" id="home">
+        <div class="back-column-1 animation-1">
+            <p class="back-subtitle">NickSaint Restaurante</p>
+            <h1 class="back-title">A MELHOR COMIDA JAPONESA</h1>
+            <button class="pecaja">
+                <i class="fa-solid fa-truck-fast"></i>
+                <p class="pecaja-text">Peça já!</p>
+            </button>
+        </div>
+        <div class="back-column-2 animation-2">
+            <img src="images/temaki.png" alt="" class="back-img">
+        </div>
+    </div>
+    <div class="food-title">
+        <p class="section-subtitle" id="pratos">Cultura asiática</p>
+        <h2 class="section-title">Pratos mais populares</h2>
+    </div>
+    <div class="cards-container">
+        <div class="card animation-3" id="celular-1">
+            <div class="card-img-container">
+                <img src="images/sushi.svg" alt="" class="svg-img">
+                <img src="images/sushi2.svg" alt="" class="svg-img2">
+                <img src="images/temaki-card.png" alt="" class="card-img">
+            </div>
+            <div class="card-text">
+                <div class="card-text-line"></div>
+                <p class="card-title">Temaki</p>
+                <p class="card-subtitle">2 pessoas</p>
+            </div>
+        </div>
+        <div class="card animation-4"">
+            <div class="card-img-container">
+                <img src="images/sushi.svg" alt="" class="svg-img">
+                <img src="images/sushi2.svg" alt="" class="svg-img2">
+                <img src="images/sushi-card.png" alt="" class="card-img">
+            </div>
+            <div class="card-text">
+                <div class="card-text-line"></div>
+                <p class="card-title">Sushi</p>
+                <p class="card-subtitle">2 pessoas</p>
+            </div>
+        </div>
+        <div class="card animation-5" id="celular-1">
+            <div class="card-img-container">
+                <img src="images/sushi.svg" alt="" class="svg-img">
+                <img src="images/sushi2.svg" alt="" class="svg-img2">
+                <img src="images/niguiri-card.png" alt="" class="card-img">
+            </div>
+            <div class="card-text">
+                <div class="card-text-line"></div>
+                <p class="card-title">Niguiri</p>
+                <p class="card-subtitle">2 pessoas</p>
+            </div>
+        </div>
+    </div>
+    <div class="banners-container">
+        <div class="banner-1">
+        </div>
+        <div class="banner-2">
+        </div>
+    </div>
+    <div class="patrocinadores" id="counter">
+        <p class="patrocinadores-text">Mais de <span class="mark-amarelo">150</span> parcerias feitas com sucesso</p>
+    </div>
+    <div class="marcas">
+        <img src="images/logo1.png" alt="" class="brand animation-6" id="marca-1'">
+        <img src="images/logo2.png" alt="" class="brand animation-7" id="marca-2">
+        <img src="images/logo3.png" alt="" class="brand animation-8" id="marca-3">
+        <img src="images/logo4.png" alt="" class="brand animation-9" id="marca-4">
+        <img src="images/logo5.png" alt="" class="brand animation-10" id="marca-5">
+    </div>
+    <div class="back-2">
+        <img src="images/sushi-back-2.png" alt="" class="back-img-2">
+        <div class="back-2-text animation-11">
+            <h3 class="back-2-subtitle">Qualidade</h3>
+            <h2 class="back-2-title">SEMPRE A <span class="mark-amarelo">MELHOR</span> QUALIDADE</h2>
+            <h3 class="back-2-subtitle-2">Ingredientes <span class="mark-amarelo">frescos</span></h3>
+            <button class="pecaja">
+                <i class="fa-solid fa-truck-fast"></i>
+                <p class="pecaja-text">Peça já!</p>
+            </button>
+    </div>
+    <div class="back-2-img-container animation-12">
+        <img src="images/back-2.webp" alt="" class="back-2-img">
+    </div>
+    </div>
+    <div class="food-title-2">
+        <p class="section-subtitle" id="cardapio">Cardápio</p>
+        <h2 class="section-title">Nossos melhores pratos</h2>
+    </div>
+    <div class="cards-2-container-1">
+        <div class="card-2">
+            <div class="card-2-img-container">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <button class="addcard">Fazer pedido</button>
+                <img src="images/card-2-6.png" alt="" class="card-2-img">
+            </div>
+            <div class="card-2-price-container">
+                <mark class="card-2-off">-10%</mark>
+                <p class="card-2-price-line">R$100,00</p>
+                <p class="card-2-price">R$90,00</p>
+            </div>
+            <div class="card-2-title-container">
+                <p class="card-2-title">Hot roll</p>
+            </div>
+            <div class="stars-container">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="card-2" id="temaki-california">
+            <div class="card-2-img-container">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <button class="addcard">Fazer pedido</button>
+                <img src="images/card-2-7.png" alt="" class="card-2-img">
+            </div>
+            <div class="card-2-price-container">
+                <mark class="card-2-off">-30%</mark>
+                <p class="card-2-price-line">R$100,00</p>
+                <p class="card-2-price">R$75,00</p>
+            </div>
+            <div class="card-2-title-container">
+                <p class="card-2-title">Temaki Califórnia</p>
+            </div>
+            <div class="stars-container">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="card-2" id="responsive-2">
+            <div class="card-2-img-container">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <button class="addcard">Fazer pedido</button>
+                <img src="images/card-2-2.png" alt="" class="card-2-img">
+            </div>
+            <div class="card-2-price-container">
+                <mark class="card-2-off">-5%</mark>
+                <p class="card-2-price-line">R$100,00</p>
+                <p class="card-2-price">R95,00</p>
+            </div>
+            <div class="card-2-title-container">
+                <p class="card-2-title">Barca de sushi</p>
+            </div>
+            <div class="stars-container">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="card-2" id="responsive-1">
+            <div class="card-2-img-container">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <button class="addcard">Fazer pedido</button>
+                <img src="images/card-2-5.png" alt="" class="card-2-img">
+            </div>
+            <div class="card-2-price-container">
+                <mark class="card-2-off">-30%</mark>
+                <p class="card-2-price-line">R$100,00</p>
+                <p class="card-2-price">R$75,00</p>
+            </div>
+            <div class="card-2-title-container">
+                <p class="card-2-title">Tábua de sushi</p>
+            </div>
+            <div class="stars-container">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    <div class="cards-2-container-1">
+        <div class="card-2">
+            <div class="card-2-img-container">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <button class="addcard">Fazer pedido</button>
+                <img src="images/card-2-1.png" alt="" class="card-2-img">
+            </div>
+            <div class="card-2-price-container">
+                <mark class="card-2-off">-45%</mark>
+                <p class="card-2-price-line">R$150,00</p>
+                <p class="card-2-price">R$100,00</p>
+            </div>
+            <div class="card-2-title-container">
+                <p class="card-2-title">Mesa de sushi</p>
+            </div>
+            <div class="stars-container">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="card-2" id="responsive-3">
+            <div class="card-2-img-container">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <button class="addcard">Fazer pedido</button>
+                <img src="images/card-2-3.webp" alt="" class="card-2-img">
+            </div>
+            <div class="card-2-price-container">
+                <mark class="card-2-off">-35%</mark>
+                <p class="card-2-price-line">R$100,00</p>
+                <p class="card-2-price">R$75,00</p>
+            </div>
+            <div class="card-2-title-container">
+                <p class="card-2-title">Porção de sushi</p>
+            </div>
+            <div class="stars-container">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="card-2" id="responsive-2">
+            <div class="card-2-img-container">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <button class="addcard">Fazer pedido</button>
+                <img src="images/card-2-4.webp" alt="" class="card-2-img">
+            </div>
+            <div class="card-2-price-container">
+                <mark class="card-2-off">-15%</mark>
+                <p class="card-2-price-line">R$100,00</p>
+                <p class="card-2-price">R$75,00</p>
+            </div>
+            <div class="card-2-title-container">
+                <p class="card-2-title">Porção de sushi</p>
+            </div>
+            <div class="stars-container">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="card-2" id="responsive-1">
+            <div class="card-2-img-container">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+                <button class="addcard">Fazer pedido</button>
+                <img src="images/card-2-8.png" alt="" class="card-2-img">
+            </div>
+            <div class="card-2-price-container">
+                <mark class="card-2-off">-25%</mark>
+                <p class="card-2-price-line">R$50,00</p>
+                <p class="card-2-price">R$25,00</p>
+            </div>
+            <div class="card-2-title-container">
+                <p class="card-2-title">Porção de Temaki</p>
+            </div>
+            <div class="stars-container">
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+    <div class="view-more-container">
+        <button class="pecaja" id="promocoes">
+            <i class="fas fa-shopping-cart"></i>
+            Ver mais
+        </button>
+    </div>
+    <div class="back-3">
+        <div class="back-3-column-1">
+            <div class="back-3-text animation-13">
+                <p class="back-3-subtitle" >Nossas promoções</p>
+                <p class="back-3-title">Pratos de cultura asiática com <span class="mark-verde">desconto</span> imperdível</p>
+                <p class="back-3-explaining">Aproveite todas as opções de nosso cardápio com uma promoção imperdível</p>
+            </div>
+            <div class="back-3-cards-container">
+                <div class="back-3-card animation-14">
+                    <img src="images/logo4.png" alt="" class="back-3-logo">
+                    <p class="card-3-text">Pratos com até 10% de desconto</p>
+                </div>
+                <div class="back-3-card animation-15">
+                    <img src="images/logo5.png" alt="" class="back-3-logo">
+                    <p class="card-3-text">Pratos com até 40% de desconto</p>
+                </div>
+                <div class="back-3-card animation-16">
+                    <img src="images/logo1.png" alt="" class="back-3-logo">
+                    <p class="card-3-text">Pratos com até 20% de desconto</p>
+                </div>
+            </div>
+        </div>
+        <div class="back-3-column-2">
+            <div class="back-3-img-container">
+                <img src="images/sushi-back-2.png" alt="" class="back-3-img">
+                <img src="images/card-2-6.png" alt="" class="back-3-hotroll animation-17">
+            </div>
+        </div>
+    </div>
+    <div class="carousel">
+        <div class="carousel-slide">
+            <h1 class="carousel-title">Pratos populares</h1>
+            <img src="images/carousel.svg" alt="" class="carousel-img">
+            <h1 class="carousel-title-2">Cultura asiática</h1>
+            <img src="images/carousel2.svg" alt="" class="carousel-img">
+            <h1 class="carousel-title">Pratos populares</h1>
+            <img src="images/carousel.svg" alt="" class="carousel-img">
+            <h1 class="carousel-title-2">Cultura asiática</h1>
+            <img src="images/carousel2.svg" alt="" class="carousel-img">
+            <h1 class="carousel-title">Pratos populares</h1>
+            <img src="images/carousel.svg" alt="" class="carousel-img">
+            <h1 class="carousel-title-2">Cultura asiática</h1>
+            <img src="images/carousel2.svg" alt="" class="carousel-img">
+            <h1 class="carousel-title">Pratos populares</h1>
+            <img src="images/carousel.svg" alt="" class="carousel-img">
+            <h1 class="carousel-title-2">Cultura asiática</h1>
+            <img src="images/carousel2.svg" alt="" class="carousel-img">
+        </div>
+    </div>
+    <div class="box-container">
+        <div class="box">
+            <div class="box-column animation-18">
+                <img src="images/box-sushi2.svg" alt="" class="box-img">
+                <h4 class="box-title">Pratos excepcionais</h4>
+                <p class="box-text">Cada prato é cuidadosamente preparado, com atenção aos detalhes e equilíbrio de sabores, oferecendo qualidade.</p>
+            </div>
+            <div class="box-column animation-19" id="marca-3">
+                <img src="images/box-sushi.svg" alt="" class="box-img">
+                <h4 class="box-title">Ingredientes frescos</h4>
+                <p class="box-text">Os ingredientes frescos são a base dos pratos do NickSaint, garantindo sabores intensos e autênticos.</p>
+            </div>
+            <div class="box-column animation-20" id="marca-4">
+                <img src="images/box-sushi3.svg" alt="" class="box-img">
+                <h4 class="box-title">Serviço de qualidade</h4>
+                <p class="box-text">O serviço do NickSaint é impecável, com atendimento atencioso e eficiente. A equipe é dedicada a proporcionar uma experiência agradável.</p>
+            </div>
+            <div class="box-column animation-21" id="marca-5">
+                <img src="images/box-sushi4.svg" alt="" class="box-img">
+                <h4 class="box-title">Experiência unica</h4>
+                <p class="box-text">Cada detalhe, desde o atendimento até os sabores, é pensado para criar uma vivência inesquecível..</p>
+            </div>
+        </div>
+    </div>
+    <div class="temaki-container" id="serviço">
+        <div class="temaki-column-1 animation-22">
+            <img src="images/temaki-main.webp" alt="" class="temaki-img">
+        </div>
+        <div class="temaki-column-2 animation-23">
+            <div class="back-3-subtitle">Serviço e culinária</div>
+            <div class="back-3-title-2">Qualidade na culinária e no <span class="mark-verde">atendimento</span></div>
+            <p class="box-text-2">A Nicksaint Comida Japonesa se destaca pela qualidade excepcional de sua culinária, oferecendo pratos frescos e saborosos que capturam a autenticidade da gastronomia japonesa. Os ingredientes são cuidadosamente selecionados, proporcionando uma experiência gastronômica de alto nível, seja em sushis, sashimis ou outras especialidades.</p>
+            <div class="temaki-column-container">
+                <div class="temaki-column-2-contents-1">
+                    <div class="temaki-column-column1">
+                        <img src="images/box-sushi4.svg" alt="" class="temaki-logo">
+                    </div>
+                    <div class="temaki-column-column2">
+                        <h4 class="temaki-column-title">Culinária</h4>
+                    </div>
+                </div>
+                <div class="temaki-column-2-contents-1">
+                    <div class="temaki-column-column1">
+                    <img src="images/box-sushi3.svg" alt="" class="temaki-logo">
+                    </div>
+                    <div class="temaki-column-column2">
+                        <h4 class="temaki-column-title">Serviço</h4>
+                    </div>
+                </div>
+            </div>
+            <button class="pecaja-2">
+                <i class="fas fa-shopping-cart"></i>
+                Peça já
+            </button>
+        </div>
+    </div>
+    <div class="food-title-2">
+        <p class="section-subtitle">Nossos clientes</p>
+        <h2 class="section-title">As melhores avaliações</h2>
+        <h2 class="section-title-2">"O restaurante NickSaint é uma excelente opção para quem busca uma experiência gastronômica de qualidade no universo da comida japonesa. O ambiente é moderno e acolhedor, proporcionando uma atmosfera tranquila e sofisticada"</h2>
+        <div class="stars-container-2">
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+            <i class="fa fa-star" aria-hidden="true"></i>
+        </div>
+        <div class="users-container" id="delivery">
+            <img src="images/cliente1.webp" alt="" class="cliente-img">
+            <img src="images/cliente2.webp" alt="" class="cliente-img">
+            <img src="images/cliente3.webp" alt="" class="cliente-img">
+        </div>
+    </div>
+    <footer>
+    <div class="entregador-box-container">
+        <div class="entregador-box">
+            <div class="entregador-box-text">
+                <div class="back-3-text animation-24">
+                    <p class="back-3-subtitle">Nossas promoções</p>
+                    <p class="back-3-title">Taxa de entrega com <span class="mark-verde">desconto</span> exclusivo</p>
+                    <button class="pecaja-3">
+                        <i class="fas fa-shopping-cart"></i>
+                        Peça já
+                    </button>
+                </div>
+            </div>
+            <div class="entregador-box-img animation-25">
+                <img src="images/entregador.webp" alt="" class="entregador">
+            </div>
+        </div>
+    </div>
+    <div class="reservas-container" id="reservas">
+        <div class="reservas-column-1">
+            <div class="back-3-subtitle">Reservas</div>
+            <div class="back-3-title-2">Gostaria de fazer uma reserva?</div>
+            <div class="phone-container">
+                <i class="fa fa-phone" aria-hidden="true" id="phone"></i>
+                <div class="phone-columns">
+                    <p class="endereco">Rua das laranjeiras</p>
+                    <p class="telefone">(11) 99999-9999</p>
+                </div>
+            </div>
+        </div>
+        <div class="reservas-column-2" id="contato">
+            
+        </div>
+    </div>
+    <div class="reservas-card">
+        <h3 class="reservas-title">Fazer uma reserva</h3>
+        <div class="input-container">
+            <div class="telefone-container">
+                <input type="text" name="" id="" placeholder="Nome" class="telefone-input">
+                <i class="fa fa-user" aria-hidden="true" id="telefone-icon-input"></i>
+            </div>
+            <div class="telefone-container">
+                <input type="number" name="" id="" placeholder="Telefone" class="telefone-input">
+                <i class="fa fa-phone" aria-hidden="true" id="telefone-icon-input"></i>
+            </div>
+            <div class="telefone-container">
+                <input type="text" name="" id="" placeholder="Data" class="telefone-input">
+                <i class="fa fa-calendar" aria-hidden="true" id="telefone-icon-input"></i>
+            </div>
+        </div>
+        <button class="input-button">Reservar</button>
+    </div>
+    <div class="photos-container">
+        <div class="photo-box-1">
+        </div>
+        <div class="photo-box-2">
+        </div>
+        <div class="photo-box-3">
+        </div>
+        <div class="photo-box-4">
+        </div>
+        <div class="photo-box-5">
+        </div>
+        <div class="photo-box-6">
+        </div>
+    </div>
+</footer>
+</body>
+</html>
